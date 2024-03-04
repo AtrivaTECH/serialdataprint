@@ -1,6 +1,6 @@
 # Serial Data Print
 Print data from serial port of choice. Ubuntu and Windows Compatible. Currently in Beta.
 
-Write-Up: Can be read by clicking this!
+Write-Up: <a href = "https://esccrasci.in/serial-port-data-print" > Can be read by clicking this!</a>
 
-A Product Of On Group
+<b>A Product Of On Group</b>
