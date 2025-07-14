@@ -1,3 +1,4 @@
+#V1.2.0
 import sys
 import glob
 import serial
@@ -7,12 +8,17 @@ import threading
 root = tk.Tk()
 root.title("Serial Port Data Print - AtrivaTECH")
 root.configure(background='#ebebeb')
-root.iconbitmap("logo.ico")
+
+# Set icon if it exists
+try:
+    root.iconbitmap("logo.ico")
+except tk.TclError:
+    pass  # Icon file not found, continue without it
 
 def display_about():
     about_window = tk.Toplevel(root)
     about_window.title("About")
-    about_text = "Serial Port Data Print\n\nAtrivaTECH\natrivatech.com \nVersion 1.1.0\n\nConnect to a serial port and print data received via Serial.\n\nCertified Open-Source. \n\n© 2024 AtrivaTECH (A Unit of It's ON Group Of Companies (ONGOC)). All rights reserved. \n esccrasci.in/about-on"
+    about_text = "Serial Port Data Print\n\nAtrivaTECH\natrivatech.com \n\nVersion 1.2.0\n\nConnect to a serial port and print data received via Serial.\n\nCertified Open-Source. \n\n© 2024-2025 AtrivaTECH (A Unit of Atrivatech P. Ltd.). All rights reserved. \n\n A product for Engineers, Hobbyists and Professionals. \n Distributed for free use and non Commercial purposes.\n \nThis software purely runs locally and does not send data to any server.\nFor more information, visit atrivatech.com"
     about_label = tk.Label(about_window, text=about_text, padx=20, pady=20)
     about_label.pack()
 
